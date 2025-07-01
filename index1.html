@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LangChain Agent</title>
+</head>
+<body>
+<h1>Innovation Sprint</h1>
+    <h2>Create a Simple Researcher Agent in LangChaint</h2>
+    <form method="post">
+        <input type="text" name="query" placeholder="user research question..." size="60" required />
+        <button type="submit">Ask</button>
+    </form>
+    <br/>
+    {% if response %}
+        <div>
+            <h3>🔍 Agent Response:</h3>
+            <p>{{ response }}</p>
+        </div>
+    {% endif %}
+</body>
+</html>
